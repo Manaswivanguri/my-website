@@ -1,1 +1,198 @@
-# my-website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manaswi’s Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Karla', sans-serif;
+      background: #fdf6f0;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+
+    header {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      background: #ffe5ec;
+      padding: 30px 20px;
+      color: #4d2c2c;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      text-align: center;
+      background: #fff;
+      padding: 10px 0;
+      border-bottom: 2px dashed #ffcad4;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4d2c2c;
+      font-weight: bold;
+      margin: 0 15px;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 2rem;
+      color: #ff758f;
+      margin-bottom: 20px;
+      border-left: 4px dotted #ff758f;
+      padding-left: 10px;
+    }
+
+    .home {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .home img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px dashed #ffcad4;
+    }
+
+    .home p {
+      flex: 1;
+      font-size: 1.2rem;
+    }
+
+    .project-card {
+      background: #fff9f4;
+      border-left: 6px solid #ffb3c6;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+
+    .project-card h3 {
+      margin-bottom: 8px;
+      color: #d14d72;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #ff758f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #d14d72;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #555;
+      background-color: #fff0f5;
+      border-top: 2px dashed #ffcad4;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    ✨ Manaswi’s Student Portfolio ✨
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home" class="home">
+    <img src="https://i.imgur.com/0y0y0y0.png" alt="Profile Photo">
+    <p>
+      Hey! I'm <strong>Manaswi</strong>, a passionate 3rd year B.Tech student who believes in the magic of learning, coding, and creativity. I love AI, design, and solving real-world problems in unique ways. Welcome to my digital notebook!
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Me 📖</h2>
+    <p>
+      I'm studying B.Tech in Artificial Intelligence and always curious about how things work. I enjoy building cool things — from websites to little AI apps. My goal? Build smart, simple, and soulful technology!
+    </p>
+    <ul>
+      <li><strong>Languages:</strong> Python, JavaScript, C++</li>
+      <li><strong>Tools:</strong> HTML, CSS, Flask, Oracle DB, Tkinter</li>
+      <li><strong>Soft skills:</strong> Teamwork, Design Thinking, Teaching</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects 🎨</h2>
+
+    <div class="project-card">
+      <h3>📚 Bookstore App</h3>
+      <p>A desktop app to manage books and sales, built using Python and Oracle DB. Includes login, billing, and search features.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🌸 Personal Portfolio</h3>
+      <p>This very site! A handcrafted pastel layout using HTML & CSS to reflect my creative side as a student & developer.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>🤖 Student AI Assistant</h3>
+      <p>A fun little chatbot using Python and NLTK that helps students get quick academic answers.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Let’s Chat 💌</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Say something... 😊" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    Ⓒ 2025 Made with ☕ + ❤️ by Manaswi • All rights reserved.
+  </footer>
+
+</body>
+</html>
+
